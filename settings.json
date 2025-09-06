@@ -1,0 +1,268 @@
+{
+  // ─────────── STARTUP & FILE MANAGEMENT ───────────
+  "workbench.startupEditor": "newUntitledFile", // Always open a blank new file on startup
+  "files.autoSave": "afterDelay", // Enable autosave
+  "files.autoSaveDelay": 1000, // Save after 1s of inactivity
+  "files.trimTrailingWhitespace": true, // Remove trailing whitespace on save
+  "files.insertFinalNewline": true, // Ensure files end with a newline
+
+  // ─────────── EDITOR APPEARANCE & FONT ───────────
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Fira Code, monospace",
+  "editor.fontSize": 11.5,
+  "editor.lineHeight": 22,
+  "editor.fontWeight": "300",
+  "editor.mouseWheelZoom": true,
+  "editor.wordWrap": "on",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  // "editor.guides.bracketPairs": "active", // Optional: guides around bracket pairs
+
+  // ─────────── WORKBENCH (UI) ───────────
+  "workbench.iconTheme": "a-file-icon-vscode", // File/folder icons
+  "workbench.sideBar.location": "right", // Sidebar on right side
+  "workbench.colorTheme": "JetBrains Darcula Theme",
+
+  // ─────────── TERMINAL, COLORS ───────────
+  "terminal.explorerKind": "external",
+  "terminal.external.linuxExec": "foot",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.mouseWheelZoom": true,
+  "workbench.colorCustomizations": {
+    "terminal.background": "#343644", // Dracula soft background
+    "terminal.foreground": "#f8f8f2",
+    "terminalCursor.background": "#f8f8f2",
+    "terminalCursor.foreground": "#f8f8f2",
+
+    // Regular ANSI colors
+    "terminal.ansiBlack": "#21222c",
+    "terminal.ansiRed": "#ff5555",
+    "terminal.ansiGreen": "#50fa7b",
+    "terminal.ansiYellow": "#f1fa8c",
+    "terminal.ansiBlue": "#bd93f9",
+    "terminal.ansiMagenta": "#ff79c6",
+    "terminal.ansiCyan": "#8be9fd",
+    "terminal.ansiWhite": "#f8f8f2",
+
+    // Bright ANSI colors
+    "terminal.ansiBrightBlack": "#6272a4",
+    "terminal.ansiBrightRed": "#ff6e6e",
+    "terminal.ansiBrightGreen": "#69ff94",
+    "terminal.ansiBrightYellow": "#ffffa5",
+    "terminal.ansiBrightBlue": "#d6acff",
+    "terminal.ansiBrightMagenta": "#ff92df",
+    "terminal.ansiBrightCyan": "#a4ffff",
+    "terminal.ansiBrightWhite": "#ffffff",
+
+    // Selection
+    "terminal.selectionBackground": "#44475a",
+    "terminal.selectionForeground": "#ffffff",
+
+    // Links
+    "terminalLink.foreground": "#8be9fd"
+  },
+
+  // ─────────── FORMATTING (PRETTIER + BIOME) ───────────
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  // Prettier settings
+  "prettier.useEditorConfig": false,
+  "prettier.requireConfig": true,
+  "prettier.configPath": "/home/igor7786/PycharmProjects/PythonProject/AsrtoFastapi/frontend/.prettierrc.mjs",
+  "prettier.prettierPath": "/home/igor7786/PycharmProjects/PythonProject/AsrtoFastapi/frontend/node_modules/prettier",
+  "prettier.ignorePath": "/home/igor7786/PycharmProjects/PythonProject/AsrtoFastapi/frontend/.prettierignore",
+  "prettier.documentSelectors": ["**/*.astro"],
+
+  // Default formatters
+  "[astro]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // Tailwind
+  "tailwind-fold.autoFold": false,
+
+  // ─────────── PYTHON SETTINGS ───────────
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.displayEnglishDiagnostics": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    }
+  },
+
+  // ─────────── TYPESCRIPT SETTINGS ───────────
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // ─────────── EXTENSIONS ───────────
+  // Kubernetes
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-linux": "/home/igor7786/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.minikube-path-linux": "/home/igor7786/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+
+  // SQLTools
+  "sqltools.useNodeRuntime": true,
+
+  // Astro
+  "astro.updateImportsOnFileMove.enabled": true,
+  "astro.trace.server": "messages",
+
+  // ─────────── KEY PROMOTER (Shortcut Trainer) ───────────
+  "Key Promoter.loyaltyLevel": 1, // Number of uses before suggesting
+  "Key Promoter.suggestKeybindingCreation": false, // Don’t suggest bindings for unbound commands
+  "Key Promoter.ignoredCommands": [
+    "workbench.action.quickOpen",
+    "workbench.action.closeActiveEditor",
+    "list.focusDown",
+    "workbench.action.Editor",
+    "inlineChat.acceptChanges",
+    "selectPrevSuggestion",
+    "editor.action.startFindReplaceAction",
+    "scrollLineUp",
+    "cursorWordEndRight",
+    "cursorWordEndRightSelect",
+    "cursorWordLeftSelect",
+    "workbench.action.files.save",
+    "deleteWordRight",
+    "deleteLeft",
+    "workbench.action.closeAllEditors",
+    "moveFileToTrash",
+    "editor.action.moveLinesDownAction",
+    "workbench.action.output.toggleOutput",
+    "inlineChat.hideHint",
+    "selectNextSuggestion",
+    "scrollLineDown",
+    "workbench.action.moveEditorToNextGroup",
+    "cursorPageDown",
+    "notifications.focusLastToast",
+    "cursorPageUp",
+    "workbench.action.terminal.paste",
+    "editor.action.smartSelect.expand",
+    "editor.action.smartSelect.shrink",
+    "workbench.action.openGlobalKeybindings",
+    "workbench.action.splitEditor",
+    "workbench.action.quickOpenNavigateNext",
+    "workbench.action.quickOpenNavigatePrevious",
+    "cursorWordLeft"
+  ],
+
+  // ─────────── MISC ───────────
+  "explorer.confirmDelete": false, // Skip confirmation on file delete
+  "diffEditor.ignoreTrimWhitespace": false,
+  "redhat.telemetry.enabled": false, // Disable Red Hat telemetry
+  "workbench.settings.applyToAllProfiles": ["prettier.configPath"],
+
+  // TypeScript helper tips
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+  "totalTypeScript.hiddenTips": [
+    "non-null-expression",
+    "typing-function-parameters",
+    "passing-generics-to-types",
+    "typeof",
+    "optional-object-property",
+    "interface-declaration",
+    "union-type",
+    "basic-types",
+    "null-keyword",
+    "ts-object-type",
+    "record-utility-type",
+    "undefined-keyword"
+  ],
+
+  // Import Cost extension
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "keyword.control.import.ts",
+          "keyword.control.import.tsx",
+          "keyword.control.import.js",
+          "keyword.control.import.jsx",
+          "keyword.control.import.astro"
+        ],
+        "settings": { "fontStyle": "italic" }
+      },
+      {
+        "scope": [
+          "entity.name.import.ts",
+          "entity.name.import.tsx",
+          "entity.name.import.js",
+          "entity.name.import.jsx",
+          "entity.name.import.astro",
+          "variable.other.readwrite.ts",
+          "variable.other.readwrite.tsx",
+          "variable.other.readwrite.js",
+          "variable.other.readwrite.jsx",
+          "variable.other.readwrite.astro"
+        ],
+        "settings": { "fontStyle": "italic" }
+      },
+      {
+        "scope": [
+          "keyword.operator.from.ts",
+          "keyword.operator.from.tsx",
+          "keyword.operator.from.js",
+          "keyword.operator.from.jsx",
+          "keyword.operator.from.astro",
+          "string.quoted.single.ts",
+          "string.quoted.single.tsx",
+          "string.quoted.single.js",
+          "string.quoted.single.jsx",
+          "string.quoted.single.astro",
+          "string.quoted.double.ts",
+          "string.quoted.double.tsx",
+          "string.quoted.double.js",
+          "string.quoted.double.jsx",
+          "string.quoted.double.astro"
+        ],
+        "settings": { "fontStyle": "italic" }
+      }
+    ]
+  },
+
+  // Rainbow Brackets extension
+  "RainbowBrackets.depreciation-notice": false,
+  "RainbowBrackets.forceUniqueOpeningColor": true,
+  "RainbowBrackets.scopeLineRelativePosition": false,
+  "RainbowBrackets.showHorizontalScopeLine": false,
+  "RainbowBrackets.showVerticalScopeLine": false,
+  // Rainbow Brackets extension
+  // "rainbowTags.supportedLanguages": [
+  //   "html",
+  //   "php",
+  //   "twig",
+  //   "blade",
+  //   "smarty",
+  //   "xml",
+  //   "vue",
+  //   "astro",
+  //   "jsx",
+  //   "tsx",
+  //   "react",
+  //   "svelte"
+  // ],
+  "rainbowTags.colors": [
+    "#56B6C2",
+    "#00a960",
+    "#50FA7B",
+    "#FF79C6",
+    "#50FA7B",
+    "#BD93F9",
+    "#F1FA8C",
+    "#82AAFF",
+    "#C792EA",
+    "#A3BE8C",
+    "#E5C07B",
+    "#D19A66"
+  ],
+  "rainbowTags.allowEverywhere": true
+}
