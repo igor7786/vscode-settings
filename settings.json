@@ -2,15 +2,25 @@
   // ─────────── STARTUP & FILE MANAGEMENT ───────────
   "workbench.startupEditor": "newUntitledFile", // Always open a blank new file on startup
   "files.autoSave": "afterDelay", // Enable autosave
+  "editor.fontLigatures": true, // Enable font ligatures
   "files.autoSaveDelay": 1000, // Save after 1s of inactivity
   "files.trimTrailingWhitespace": true, // Remove trailing whitespace on save
   "files.insertFinalNewline": true, // Ensure files end with a newline
-
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.renderWhitespace": "all",
+  "editor.minimap.enabled": true,
+  "editor.minimap.scale": 1,
+  "breadcrumbs.enabled": true,
+  // highlights -> off,
+  "editor.selectionHighlight": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.renderLineHighlight": "none",
   // ─────────── EDITOR APPEARANCE & FONT ───────────
   "editor.fontFamily": "JetBrainsMono Nerd Font, Fira Code, monospace",
   "editor.fontSize": 11.5,
-  "editor.lineHeight": 22,
-  "editor.fontWeight": "300",
+  "editor.lineHeight": 19,
+  "editor.fontWeight": "400",
   "editor.mouseWheelZoom": true,
   "editor.wordWrap": "on",
   "editor.semanticHighlighting.enabled": true,
@@ -87,11 +97,17 @@
   "tailwind-fold.autoFold": false,
 
   // ─────────── PYTHON SETTINGS ───────────
+  // venv path
+  // "python.defaultInterpreterPath": "/home/igor7786/PycharmProjects/P",
+  "python.venvPath": "/home/igor7786/PycharmProjects/PythonProject/AsrtoFastapi/backend/.venv",
+  "python.terminal.activateEnvironment": true,
+
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "standard",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.displayEnglishDiagnostics": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
+
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit"
@@ -151,7 +167,15 @@
     "workbench.action.splitEditor",
     "workbench.action.quickOpenNavigateNext",
     "workbench.action.quickOpenNavigatePrevious",
-    "cursorWordLeft"
+    "cursorWordLeft",
+    "editor.action.inlineSuggest.hide",
+    "workbench.action.terminal.new",
+    "copyFilePath",
+    "workbench.action.togglePanel",
+    "workbench.action.terminal.sendSequence",
+    "workbench.action.terminal.copySelection",
+    "editor.action.moveLinesUpAction",
+    "editor.action.insertCursorAbove"
   ],
 
   // ─────────── MISC ───────────
@@ -160,24 +184,13 @@
   "redhat.telemetry.enabled": false, // Disable Red Hat telemetry
   "workbench.settings.applyToAllProfiles": ["prettier.configPath"],
 
-  // TypeScript helper tips
-  "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": false,
-  "totalTypeScript.hiddenTips": [
-    "non-null-expression",
-    "typing-function-parameters",
-    "passing-generics-to-types",
-    "typeof",
-    "optional-object-property",
-    "interface-declaration",
-    "union-type",
-    "basic-types",
-    "null-keyword",
-    "ts-object-type",
-    "record-utility-type",
-    "undefined-keyword"
-  ],
-
+  // "workbench.colorCustomizations": {
+  //   "editor.background": "#1e1e1e",
+  //   "editor.foreground": "#d4d4d4",
+  //   "editor.lineHighlightBackground": "#803d3d",
+  //   "editorCursor.foreground": "#d4d4d4",
+  //   "editorWhitespace.foreground": "#3e3e3e"
+  // },
   // Import Cost extension
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -251,11 +264,11 @@
   //   "svelte"
   // ],
   "rainbowTags.colors": [
-    "#56B6C2",
-    "#00a960",
-    "#50FA7B",
-    "#FF79C6",
-    "#50FA7B",
+    "#E8BA36",
+    "#54A857",
+    "#359FF4",
+    "#6E7ED9",
+    "#179387",
     "#BD93F9",
     "#F1FA8C",
     "#82AAFF",
@@ -264,5 +277,56 @@
     "#E5C07B",
     "#D19A66"
   ],
-  "rainbowTags.allowEverywhere": true
+  "rainbowTags.allowEverywhere": true,
+
+  // Better Highlight extension
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#B82421",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "mcpServers": {},
+  "cSpell.userWords": ["rcomp", "reactcomp", "shadcn", "tabler"]
 }

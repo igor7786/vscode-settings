@@ -1,3 +1,4 @@
+sudo cp /home/igor7786/.config/Code/User/settings.json /home/igor7786/PycharmProjects/PythonProject/vscode-settings/settings.json
  cd ~/.vscode/extensions/
  code --list-extensions > extensions.txt
  mv extensions.txt /home/igor7786/PycharmProjects/PythonProject/vscode-settings/

@@ -1,5 +1,6 @@
 aaron-bond.better-comments
 anan.jetbrains-darcula-theme
+anteprimorac.html-end-tag-labels
 antfu.iconify
 astro-build.astro-vscode
 atommaterial.a-file-icon-vscode
@@ -22,6 +23,8 @@ dsznajder.es7-react-js-snippets
 eamodio.gitlens
 esbenp.prettier-vscode
 euskadi31.json-pretty-printer
+formulahendry.auto-close-tag
+formulahendry.auto-rename-tag
 frinkr.pdf
 github.copilot
 github.copilot-chat
@@ -29,7 +32,6 @@ gruntfuggly.todo-tree
 jannisx11.batch-rename-extension
 lokalise.i18n-ally
 mathematic.vscode-pdf
-mattpocock.ts-error-translator
 mikestead.dotenv
 monilpatel.learn-keyboard-shortcuts
 ms-azuretools.vscode-containers
@@ -44,10 +46,10 @@ ms-vscode.powershell
 mtxr.sqltools
 mtxr.sqltools-driver-sqlite
 naumovs.color-highlight
-oderwat.indent-rainbow
 randomfractalsinc.duckdb-sql-tools
 redhat.vscode-yaml
 stivo.tailwind-fold
+streetsidesoftware.code-spell-checker
 tal7aouy.rainbow-bracket
 vincaslt.highlight-matching-tag
 visualstudioexptteam.intellicode-api-usage-examples
