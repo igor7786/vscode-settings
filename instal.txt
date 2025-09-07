@@ -1,3 +1,6 @@
+ cd ~/.vscode/extensions/
+ code --list-extensions > extensions.txt
+ mv extensions.txt /home/igor7786/PycharmProjects/PythonProject/vscode-settings/
  // install vscode
  yay -S visual-studio-code-bin
  // install all extensions

@@ -21,6 +21,7 @@ donebd.vscode-keypromoter
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
 esbenp.prettier-vscode
+euskadi31.json-pretty-printer
 frinkr.pdf
 github.copilot
 github.copilot-chat
