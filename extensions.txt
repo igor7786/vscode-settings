@@ -29,6 +29,7 @@ frinkr.pdf
 github.copilot
 github.copilot-chat
 gruntfuggly.todo-tree
+isudox.vscode-jetbrains-keybindings
 jannisx11.batch-rename-extension
 lokalise.i18n-ally
 mathematic.vscode-pdf

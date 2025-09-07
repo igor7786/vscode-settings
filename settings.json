@@ -175,7 +175,12 @@
     "workbench.action.terminal.sendSequence",
     "workbench.action.terminal.copySelection",
     "editor.action.moveLinesUpAction",
-    "editor.action.insertCursorAbove"
+    "editor.action.insertCursorAbove",
+    "workbench.action.navigateBack",
+    "workbench.action.navigateForward",
+    "workbench.action.moveEditorToPreviousGroup",
+    "workbench.action.previousEditor",
+    "workbench.action.nextEditor"
   ],
 
   // ─────────── MISC ───────────
