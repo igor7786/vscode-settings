@@ -1,3 +1,5 @@
+profile -> export settings-> give a name-> ~.json
+################################## 2 method #################################################################################
 sudo cp /home/igor7786/.config/Code/User/settings.json /home/igor7786/PycharmProjects/PythonProject/vscode-settings/settings.json
 sudo cp /home/igor7786/.config/Code/User/keybindings.json /home/igor7786/PycharmProjects/PythonProject/vscode-settings/keybindings.json
 sudo cp /home/igor7786/.config/Code/User/mcp.json /home/igor7786/PycharmProjects/PythonProject/vscode-settings/mcp.json
